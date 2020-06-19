@@ -1,29 +1,35 @@
 {% extends 'blog/base.html' %}
 
 {% block content %}
-    <h2 id="title">The Posts</h2>
-    <div class="main">
-        {% for post in posts %}
-            <div class="post">
-                <div class="date">
-                    <p>published: {{ post.published_date }}</p>
+<div class="d-flex justify-content-between">
+    <div class="col-md-6">
+        <h2 id="title">The Posts</h2>
+        <div class="main">
+            {% for post in posts %}
+                <div class="post">
+                    <div class="date">
+                        <p>published: {{ post.published_date }}</p>
+                    </div>
+                    <h2><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h2>
+                    <p>{{ post.text|linebreaksbr }}</p>
+                    <hr class="roundDiv">
                 </div>
-                <h2><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h2>
-                <p>{{ post.text|linebreaksbr }}</p>
-                <hr class="roundDiv">
-            </div>
-        {% endfor %}
-    </div>
-    <div class="sidemenu">
-        <p class="sidehead">Posts</p>
-        {% for post in posts %}
-        <div class="sidepost">
-            <div class="sidedate">
-                <p>{{ post.published_date }}</p>
-            </div>
-            <h3><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h2>
-            <hr class="sideDiv">
+            {% endfor %}
         </div>
-        {% endfor %}
     </div>
+    <div class="col-4">
+        <div class="sideMenu">
+            <p class="sideHead">Posts</p>
+            {% for post in posts %}
+            <div class="sidePost">
+                <div class="sideDate">
+                    <p>{{ post.published_date }}</p>
+                </div>
+                <h3><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h2>
+                <hr class="sideDiv">
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>   
 {% endblock %}

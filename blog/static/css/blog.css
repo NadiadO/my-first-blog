@@ -26,8 +26,9 @@ body {
     text-decoration: none;
 }
 
-.content {
+.container {
     margin-left: 40px;
+    margin-right: 40px;
 }
 
 .date {
@@ -43,11 +44,18 @@ body {
 }
 
 .top-menu, .top-menu:hover, .top-menu:visited {
-    color: #ffffff;
     float: right;
     font-size: 26pt;
     margin-right: 20px;
+    text-align:center; 
+    padding: 3px 4px 6px 6px; 
+    border: 4px #DDDDDD;
+    border-style:double; 
+    border-radius:8px; 
+    margin-top: 22px;
+    color: #A6B2C2;
 }
+
 
 .post {
     margin-bottom: 30px;
@@ -72,24 +80,25 @@ body {
     border-radius: 3px;
 }
 
-.col-md-8{
-    width: 1170px;
+
+.col-4{
+    margin-left: 20px;
+    float: right;
 }
 
 .main{
-    width: 500px;
     float: left;
 }
-.sidemenu {
+.sideMenu {
     padding: 20px 20px 10px 20px;
     width: 200px;
     float: right;
-    background-color: #DBE0E7; /*BDC6D2*/
+    background-color: #DBE0E7; 
     border: solid;
-    border-color: #DBE0E7; /*C4D4E6;/*7A8592 175,194,215*/
+    border-color: #DBE0E7; 
     border-radius: 20px;
 }
-.sidehead{
+.sideHead{
     font-family: "Abel";
     font-size: 14pt;
     color: #545454;
@@ -97,11 +106,11 @@ body {
     font-weight: bold;
     margin-bottom: 20px;
 }
-.sidepost {
+.sidePost {
     margin-bottom: 20px;
 }
 
-.sidedate {
+.sideDate {
     color: #8A8A8A;
     font-size: 8pt;
 }
@@ -115,4 +124,17 @@ body {
     margin-left: -10px;
     margin-right: -10px;
     
+}
+
+.mainColumns{
+    display: flex;
+    justify-content: space-between
+}
+
+.editBtn{
+    padding: 6px 6px 6px 6px; 
+    border: 4px #DDDDDD;
+    border-style:double; 
+    border-radius:8px; 
+    float: right;
 }

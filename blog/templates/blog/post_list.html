@@ -3,7 +3,7 @@
 {% block content %}
 <div class="d-flex justify-content-between">
     <div class="col-md-6">
-        <h2 id="title">The Posts</h2>
+        <h2 class="title">The Posts</h2>
         <div class="main">
             {% for post in posts %}
                 <div class="post">
@@ -11,7 +11,7 @@
                         <p>published: {{ post.published_date }}</p>
                     </div>
                     <h2><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h2>
-                    <p>{{ post.text|linebreaksbr }}</p>
+                    <p>{{ post.text|truncatechars:200 }}</p>
                     <hr class="roundDiv">
                 </div>
             {% endfor %}

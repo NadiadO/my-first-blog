@@ -44,14 +44,11 @@ body {
 }
 
 .top-menu, .top-menu:hover, .top-menu:visited {
-    float: right;
+    float: left;
     font-size: 26pt;
     margin-right: 20px;
     text-align:center; 
     padding: 3px 4px 6px 6px; 
-    border: 4px #DDDDDD;
-    border-style:double; 
-    border-radius:8px; 
     margin-top: 22px;
     color: #A6B2C2;
 }
@@ -65,7 +62,7 @@ body {
     color: #000000;
 }
 
-#title {
+.title {
     font-family: 'Abel';
     font-size: 30pt;
     font-weight: bold;
@@ -133,8 +130,26 @@ body {
 
 .editBtn{
     padding: 6px 6px 6px 6px; 
+    float: right;
+}
+
+.barButtons {
+    float: right;
+}
+
+.btn-light {
     border: 4px #DDDDDD;
     border-style:double; 
     border-radius:8px; 
+}
+
+.publishBtn {
+    float: right;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.deleteBtn{
+    padding: 6px 6px 6px 6px; 
     float: right;
 }

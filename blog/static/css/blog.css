@@ -44,13 +44,13 @@ body {
 }
 
 .top-menu, .top-menu:hover, .top-menu:visited {
-    float: right;
     font-size: 26pt;
     margin-right: 20px;
     text-align:center; 
     padding: 3px 4px 6px 6px; 
     margin-top: 22px;
     color: #A6B2C2;
+    float: right;
 }
 
 

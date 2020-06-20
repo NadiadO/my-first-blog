@@ -128,7 +128,7 @@ body {
     justify-content: space-between
 }
 
-.editBtn{
+.squareBtn{
     padding: 6px 6px 6px 6px; 
     float: right;
 }
@@ -145,7 +145,23 @@ body {
     font-weight: bold;
 }
 
-.deleteBtn{
-    padding: 6px 6px 6px 6px; 
+.comment {
+    margin: 10px 0px 20px 20px;
+}
+
+.titleHeader{
+    font-family: "Abel";
+}
+
+.titleComment{
+    font-family: "Abel";
+    font-size: 20px;
+    color: #909FB3;
+
+}
+
+.commentBtn {
     float: right;
+    font-size: 10px;
+    font-weight: bold;
 }

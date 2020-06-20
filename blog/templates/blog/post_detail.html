@@ -18,7 +18,7 @@
             <h2 class="titleHeader">{{ post.title }}</h2>
             <p>{{ post.text|linebreaksbr }}</p>
         </div>
-        <hr>
+        <!--hr>
         <a class="commentBtn btn btn-light" href="{% url 'add_comment_to_post' pk=post.pk %}">Add comment</a>
         <h2 class="titleComment">Comments</h2>
         {% for comment in post.comments.all %}
@@ -37,6 +37,6 @@
             {% endif %}
         {% empty %}
             <p>No comments here yet :(</p>
-        {% endfor %}
+        {% endfor %}-->
     </div>
 {% endblock %}
